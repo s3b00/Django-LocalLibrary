@@ -21,6 +21,7 @@
                     <li><a href="{% url 'books' %}">All books</a></li>
                     <li><a href="{% url 'authors' %}">All authors</a></li>
                     {% if user.is_authenticated %}
+                        </br>
                         <li>User: {{ user.get_username }}</li>
                         <li><a href="{% url 'my-borrowed' %}">My books</a></li>
                         <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>   
