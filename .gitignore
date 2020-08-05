@@ -1,3 +1,6 @@
 /.venv
 /.vscode
 /locallibrary/db.sqlite3
+
+*.bak
+*.sqlite3
